@@ -1,213 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/CSS" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
-        <title>Онлайн-школа программирования для детей</title>
-        <script src="jquery-3.5.1.min.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/CSS" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto&display=swap" rel="stylesheet">
+    <title>Онлайн-школа программирования для детей</title>
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
 
-    <body>
+<body>
 
-        <header>
-            <div class="wrapper">
-                <div class="header_wrapper">
-                    <div class="header_logo">
-                        <h1 id="headerLogo">Coder Kids</h1>
-                    </div>
-
-                    <div class="header_menu">
-                        <a href="#intro" class="menu_item">ГЛАВНАЯ</a>
-                        <a href="#about" class="menu_item">О ШКОЛЕ</a>
-                        <a href="#projects" class="menu_item">КУРСЫ</a>
-                        <a href="#process" class="menu_item">КАК ПРОХОДИТ ОБУЧЕНИЕ</a>
-                        <a href="#footer" class="menu_item">КОНТАКТЫ</a>
-                    </div>
-                </div>
+<header>
+    <div class="wrapper">
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <h1 id="headerLogo">Coder Kids</h1>
             </div>
-        </header>
 
-        <main>
+            <div class="header_menu">
+                <a href="#intro" class="menu_item">ГЛАВНАЯ</a>
+                <a href="#about" class="menu_item">О ШКОЛЕ</a>
+                <a href="index2.html" class="menu_item">КУРСЫ И ОБУЧЕНИЕ</a>
+                <a href="index3.html" class="menu_item">ЗАПИСАТЬСЯ НА ЗАНЯТИЯ</a>
+                <a href="#footer" class="menu_item">КОНТАКТЫ</a>
+            </div>
+        </div>
+    </div>
+</header>
 
-            <section class="intro" id="intro">
-                <div class="intro_left">
-                    <img src="intro_logo.svg" alt="INTRO" class="intro_img">
-                </div>
+<main>
 
-                <div class="intro_right">
-                    <h1 id="myTitle" class="intro_title">
-                        Добро пожаловать в школу программирования для детей!
-                    </h1>
-                    <p class="intro_text">
-                        Мы обучаем детей программированию через игровые методики и увлекательные курсы. Начни учиться сегодня и открой для себя мир технологий!
-                    </p>
-                    <button id="myButton" class="intro_button">Записаться на курсы</button>
-                    <div id="myModal" class="modal">
-                        <div id="myContent" class="modal_content">
-                            <div id="myClose" class="close">&times;</div>
-                            <div class="send_wrapper">
-                                <h1 class="modal_title">
-                                    Хочешь начать обучаться программированию?
-                                </h1>
-                                <form>
-                                    <div class="send_form">
-                                        <div>
-                                            <input type="text" class="form1 formstyle" placeholder="Ваше имя">
-                                            <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
-                                        </div>
-                                        <textarea cols="30" rows="10" class="form3 formstyle" placeholder="Сообщение"></textarea>
-                                        <button class="modal_button">ОТПРАВИТЬ</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <section class="intro" id="intro">
+        <div class="intro_left">
+            <img src="intro_logo.svg" alt="INTRO" class="intro_img">
+        </div>
 
-            <section class="about" id="about">
-                <div class="wrapper">
-                    <div class="about_wrapper">
-                        <div class="about_block">
-                            <h2 class="about_title">О школе</h2>
-                            <p class="about_text">
-                                Наша школа программирования создана для детей, которые хотят научиться создавать игры, сайты, и многое другое. Мы предлагаем курсы, которые подходят для детей всех возрастов и уровней.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="projects" id="projects">
-                <div class="wrapper">
-                    <div class="projects_wrapper">
-                        <div class="projects_block">
-                            <img src="projects.svg" class="project_img">
-                            <img src="projects.svg" class="project_img">
-                            <img src="projects.svg" class="project_img">
-                            <img src="projects.svg" class="project_img">
-                            <img src="projects.svg" class="project_img">
-                            <img src="projects.svg" class="project_img">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="skills">
-                <div class="wrapper">
-                    <div class="skills_wrapper">
-                        <div class="skills_left">
-                            <h3 class="skills_title">Навыки учеников после прохождения обучения у нас</h3>
-                            <h4 class="skill skill_1">Программирование</h3>
-                            <h4 class="skill skill_2">Разработка игр</h3>
-                            <h4 class="skill skill_3">Создание веб-сайтов</h3>
-                        </div>
-                        <div class="skills_right">
-                            <img src="img/5.jpg" alt="MY_PHOTO" class="skills_img">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="process" id="process">
-                <div class="wrapper">
-                    <div class="process_wrapper">
-                        <div class="process_block">
-                            <h1 class="process_title">
-                                Как проходят занятия
-                            </h1>
-                            <p class="process_text">
-                                Мы проводим занятия в формате онлайн с интерактивными заданиями и проектами. Наши преподаватели помогают детям освоить программирование шаг за шагом, используя игровые элементы и веселые задачи.
-                            </p>
-                        </div>
-
-                        <video src="video.mp4" class="process_video" controls="controls"></video>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="gallery">
-                    <div class="gallery_str">
-                        <a href="img/1.jpg" class="lightzoom">
-                            <img src="img/1.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                        <a href="img/2.jpg" class="lightzoom">
-                            <img src="img/2.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                        <a href="img/3.jpg" class="lightzoom">
-                            <img src="img/3.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                        <a href="img/2.jpg" class="lightzoom">
-                            <img src="img/2.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                    </div>
-                    <div class="gallery_str">
-                        <a href="img/2.jpg" class="lightzoom">
-                            <img src="img/2.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                        <a href="img/3.jpg" class="lightzoom">
-                            <img src="img/3.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                        <a href="img/2.jpg" class="lightzoom">
-                            <img src="img/2.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                        <a href="img/1.jpg" class="lightzoom">
-                            <img src="img/1.jpg" alt="Картинка1" class="gallery_img">
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="send">
-                <div class="wrapper">
+        <div class="intro_right">
+            <h1 id="myTitle" class="intro_title">
+                Добро пожаловать в школу программирования для детей!
+            </h1>
+            <p class="intro_text">
+                Мы обучаем детей программированию через игровые методики и увлекательные курсы. Начни учиться сегодня и
+                открой для себя мир технологий!
+            </p>
+            <button id="myButton" class="intro_button">Записаться на курсы</button>
+            <div id="myModal" class="modal">
+                <div id="myContent" class="modal_content">
+                    <div id="myClose" class="close">&times;</div>
                     <div class="send_wrapper">
-                        <h1 class="send_title">
-                            Хочешь научиться программировать?
+                        <h1 class="modal_title">
+                            Хочешь начать обучаться программированию?
                         </h1>
-                        <p class="send_text">
-                            Запишитесь на курс и начинайте учить программирование уже сегодня! Мы поможем вам шаг за шагом освоить все необходимые навыки.
-                        </p>
                         <form>
                             <div class="send_form">
                                 <div>
                                     <input type="text" class="form1 formstyle" placeholder="Ваше имя">
                                     <input type="email" class="form2 formstyle" placeholder="Ваш e-mail">
                                 </div>
-                                <textarea cols="30" rows="10" class="form3 formstyle" placeholder="Сообщение"></textarea>
-                                <button class="send_button">ОТПРАВИТЬ</button>
+                                <textarea cols="30" rows="10" class="form3 formstyle"
+                                          placeholder="Сообщение"></textarea>
+                                <button class="modal_button">ОТПРАВИТЬ</button>
                             </div>
                         </form>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-        </main>
-
-        <footer id="footer">
-            <div class="wrapper">
-                <div class="footer_wrapper">
-                    <div class="left_footer">
-                        <h3 class="footer_title">Coder Kids</h3>
-                        <p class="footer_text">(с) 2025. Все права защищены.</p>
-                    </div>
-                    <div class="right_footer">
-                        <img src="vk-logo.png" alt="VK" class="footer_img">
-                        <img src="vk-logo.png" alt="VK" class="footer_img">
-                        <img src="vk-logo.png" alt="VK" class="footer_img">
-                    </div>
+    <section class="about" id="about">
+        <div class="wrapper">
+            <div class="about_wrapper">
+                <div class="about_block">
+                    <h2 class="about_title">О школе</h2>
+                    <p class="about_text">
+                        Наша школа программирования создана для детей, которые хотят научиться создавать игры, сайты, и
+                        многое другое. Мы предлагаем курсы, которые подходят для детей всех возрастов и уровней.
+                    </p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <link rel="stylesheet" href="lightzoom/style.css">
-        <script src="lightzoom/lightzoom.js"></script>
+    <section class="projects" id="projects">
+        <div class="wrapper">
+            <div class="projects_wrapper">
+                <div class="projects_block">
+                    <img src="projects.svg" class="project_img">
+                    <img src="projects.svg" class="project_img">
+                    <img src="projects.svg" class="project_img">
+                    <img src="projects.svg" class="project_img">
+                    <img src="projects.svg" class="project_img">
+                    <img src="projects.svg" class="project_img">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script>jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true, isOverlayClickClosing: true});</script>
-        <script src="myscript.js"></script>
-    </body>
+</main>
+
+<footer id="footer">
+    <div class="wrapper">
+        <div class="footer_wrapper">
+            <div class="left_footer">
+                <h3 class="footer_title">Coder Kids</h3>
+                <p class="footer_text">(с) 2025. Все права защищены.</p>
+            </div>
+            <div class="right_footer">
+                <img src="vk-logo.png" alt="VK" class="footer_img">
+                <img src="vk-logo.png" alt="VK" class="footer_img">
+                <img src="vk-logo.png" alt="VK" class="footer_img">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="lightzoom/style.css">
+<script src="lightzoom/lightzoom.js"></script>
+
+<script>jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true, isOverlayClickClosing: true});</script>
+<script src="myscript.js"></script>
+</body>
 
 </html>
 
